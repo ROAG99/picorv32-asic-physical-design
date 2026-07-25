@@ -1,0 +1,16 @@
+Warning: Layer MRDL does not have a preferred direction, skipped.
+****************************************
+Report : congestion
+Design : picorv32
+Version: U-2022.12-SP3
+Date   : Thu Apr 16 15:33:08 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |    1610 |    13 |    1361  ( 4.15%) |       1
+H routing |     139 |    13 |      60  ( 0.37%) |       1
+V routing |    1471 |     3 |    1301  ( 7.94%) |      14
+
+1
