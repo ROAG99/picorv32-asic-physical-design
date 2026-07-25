@@ -1,0 +1,213 @@
+[icc2-lic Thu Apr  2 13:02:28 2026] Command 'report_clock_qor' requires licenses
+[icc2-lic Thu Apr  2 13:02:28 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Apr  2 13:02:28 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu Apr  2 13:02:28 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu Apr  2 13:02:28 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Apr  2 13:02:28 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Apr  2 13:02:28 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu Apr  2 13:02:28 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu Apr  2 13:02:28 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu Apr  2 13:02:28 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Apr  2 13:02:28 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Apr  2 13:02:28 2026] Check-out of alternate set of keys directly with queueing was successful
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+****************************************
+Report : clock qor
+        -type local_skew
+Design : picorv32
+Version: U-2022.12-SP3
+Date   : Thu Apr  2 13:02:28 2026
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==============================================
+==== Local Skew Reporting for Corner fast ====
+==============================================
+
+========================================= Summary Table for Corner fast ==========================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func_fast
+clk                                     M,D      1557      0.17      0.32         53331        0.16        0.17
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                       1557      0.17      0.32                      0.16        0.17
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================================ Details Table for Corner fast =================================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func_fast
+clk
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_1__14_/CLK
+                                                                          0.31 r      0.14 r        --          --        0.16
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_28__18_/CLK
+                                                                          0.31 r      0.14 r        --          --        0.16
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_7__18_/CLK
+                                                                          0.31 r      0.14 r        --          --        0.16
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_22__18_/CLK
+                                                                          0.31 r      0.14 r        --          --        0.16
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_10__15_/CLK
+                                                                          0.31 r      0.14 r        --          --        0.16
+                                   S   cpuregs_reg_10__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.14 r      0.32 r        --          --       -0.17
+                                   S   cpuregs_reg_14__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.14 r      0.32 r        --          --       -0.17
+                                   S   cpuregs_reg_28__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.14 r      0.31 r        --          --       -0.17
+                                   S   cpuregs_reg_7__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.14 r      0.31 r        --          --       -0.17
+                                   S   cpuregs_reg_22__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.14 r      0.31 r        --          --       -0.17
+                               (H) L   cpuregs_reg_10__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.14 r      0.32 r        --          --        0.17
+                               (H) L   cpuregs_reg_14__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.14 r      0.32 r        --          --        0.17
+                               (H) L   cpuregs_reg_28__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.14 r      0.31 r        --          --        0.17
+                               (H) L   cpuregs_reg_22__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.14 r      0.31 r        --          --        0.17
+                               (H) L   cpuregs_reg_7__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.14 r      0.31 r        --          --        0.17
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_22__18_/CLK
+                                                                          0.31 r      0.14 r        --          --       -0.16
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_28__18_/CLK
+                                                                          0.31 r      0.14 r        --          --       -0.16
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_14__15_/CLK
+                                                                          0.31 r      0.14 r        --          --       -0.16
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_1__14_/CLK
+                                                                          0.31 r      0.14 r        --          --       -0.16
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_10__15_/CLK
+                                                                          0.31 r      0.14 r        --          --       -0.16
+
+
+==============================================
+==== Local Skew Reporting for Corner slow ====
+==============================================
+
+========================================= Summary Table for Corner slow ==========================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func_slow
+clk                                     M,D      1557      0.28      0.53         53331        0.27        0.28
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                       1557      0.28      0.53                      0.27        0.28
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+================================================ Details Table for Corner slow =================================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: func, Scenario: func_slow
+clk
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_7__18_/CLK
+                                                                          0.51 r      0.25 r        --          --        0.27
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_1__14_/CLK
+                                                                          0.51 r      0.25 r        --          --        0.27
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_14__15_/CLK
+                                                                          0.51 r      0.25 r        --          --        0.27
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_22__18_/CLK
+                                                                          0.51 r      0.25 r        --          --        0.27
+                                   L   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_28__18_/CLK
+                                                                          0.51 r      0.25 r        --          --        0.27
+                                   S   cpuregs_reg_10__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.25 r      0.53 r        --          --       -0.28
+                                   S   cpuregs_reg_14__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.25 r      0.53 r        --          --       -0.28
+                                   S   cpuregs_reg_28__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.25 r      0.52 r        --          --       -0.28
+                                   S   cpuregs_reg_7__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.25 r      0.52 r        --          --       -0.28
+                                   S   cpuregs_reg_22__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.25 r      0.52 r        --          --       -0.28
+                               (H) L   cpuregs_reg_14__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.25 r      0.53 r        --          --        0.28
+                               (H) L   cpuregs_reg_10__15_/CLK
+                                                      reg_op2_reg_15_/CLK
+                                                                          0.25 r      0.53 r        --          --        0.28
+                               (H) L   cpuregs_reg_28__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.25 r      0.52 r        --          --        0.28
+                               (H) L   cpuregs_reg_22__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.25 r      0.52 r        --          --        0.28
+                               (H) L   cpuregs_reg_7__18_/CLK
+                                                      reg_op2_reg_18_/CLK
+                                                                          0.25 r      0.52 r        --          --        0.28
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_10__15_/CLK
+                                                                          0.51 r      0.25 r        --          --       -0.27
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_28__18_/CLK
+                                                                          0.51 r      0.25 r        --          --       -0.27
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_7__18_/CLK
+                                                                          0.51 r      0.25 r        --          --       -0.27
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_14__15_/CLK
+                                                                          0.51 r      0.25 r        --          --       -0.27
+                               (H) S   latched_rd_reg_3_/CLK
+                                                      cpuregs_reg_22__18_/CLK
+                                                                          0.51 r      0.25 r        --          --       -0.27
+
+
+1

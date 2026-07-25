@@ -1,0 +1,99 @@
+Information: Using 1 threads for LVS
+[Check Short] Stage 1	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 1-2	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2	Elapsed =    0:00:00, CPU =    0:00:00
+[Check Short] Stage 2-2	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Short] Stage 3	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Short] End	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] Init	Elapsed =    0:00:01, CPU =    0:00:01
+[Check Net] 10% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 20% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 30% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 40% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 50% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 60% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 70% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 80% 	Elapsed =    0:00:02, CPU =    0:00:02
+[Check Net] 90% 	Elapsed =    0:00:02, CPU =    0:00:02
+Warning: Net pcpi_wr has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_rd[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_wait has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net pcpi_ready has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[31] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[30] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[29] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[28] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[27] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[26] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[25] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[24] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[23] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[22] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[21] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[20] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[19] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[18] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[17] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[16] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[15] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[14] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[13] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[12] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[11] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[10] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[9] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[8] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[7] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[6] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[5] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[4] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[3] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[2] has less than 2 valid port. Skip open checking for this net. (RT-204)
+Warning: Net irq[1] has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] All nets are submitted.
+Warning: Net irq[0] has less than 2 valid port. Skip open checking for this net. (RT-204)
+[Check Net] 100%	Elapsed =    0:00:02, CPU =    0:00:02
+
+===============================================================
+    Maximum number of violations is set to 20
+    Abort checking when more than 20 violations are found
+    All violations might not be found.
+===============================================================
+Total number of input nets is 8136.
+Total number of short violations is 0.
+Total number of open nets is 0.
+Total number of floating route violations is 0.
+
+Elapsed =    0:00:02, CPU =    0:00:02
+1

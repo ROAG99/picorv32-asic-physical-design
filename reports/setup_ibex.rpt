@@ -1,0 +1,622 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 10
+        -transition_time
+        -capacitance
+Design : picorv32
+Version: T-2022.03-SP5
+Date   : Wed Apr  1 14:10:08 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ff0p95v125c   Library: saed32hvt_ff0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: decoded_imm_j_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_op1_reg[21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                      0.000      0.000
+  clock network delay (ideal)                                                0.000      0.000
+  decoded_imm_j_reg[18]/CLK (DFFX1_RVT)                            0.100     0.000 #    0.000 r
+  decoded_imm_j_reg[18]/QN (DFFX1_RVT)                             0.034     0.073      0.073 r
+  n9265 (net)                                   3        1.932               0.000      0.073 r
+  U11922/Y (NOR2X0_RVT)                                            0.016     0.171      0.243 f
+  n5322 (net)                                   2        1.157               0.000      0.243 f
+  U4730/Y (INVX0_RVT)                                              0.013     0.059      0.303 r
+  n5321 (net)                                   1        0.709               0.000      0.303 r
+  U11921/Y (NOR2X1_RVT)                                            0.018     0.049      0.352 f
+  n5325 (net)                                   3        1.711               0.000      0.352 f
+  U5051/Y (AND2X1_RVT)                                             0.027     0.153      0.505 f
+  n5518 (net)                                   6        3.407               0.000      0.505 f
+  U7662/Y (NBUFFX2_RVT)                                            0.028     0.620      1.125 f
+  n7431 (net)                                  12        6.699               0.000      1.125 f
+  U7663/Y (AO22X1_RVT)                                             0.015     3.547      4.672 f
+  n5441 (net)                                   1        0.580               0.000      4.672 f
+  U7667/Y (OR4X1_RVT)                                              0.012     0.064      4.736 f
+  n5457 (net)                                   1        0.589               0.000      4.736 f
+  U5886/Y (NOR4X1_RVT)                                             0.014     0.056      4.791 r
+  n5460 (net)                                   1        0.557               0.000      4.791 r
+  U5835/Y (OA21X1_RVT)                                             0.020     0.042      4.833 r
+  n5463 (net)                                   1        0.593               0.000      4.833 r
+  U5246/Y (NAND4X0_RVT)                                            0.040     0.035      4.868 f
+  n5465 (net)                                   1        0.541               0.000      4.868 f
+  U5229/Y (MUX21X1_RVT)                                            0.025     0.051      4.919 f
+  n2519 (net)                                   1        0.557               0.000      4.919 f
+  reg_op1_reg[21]/D (DFFX2_RVT)                                    0.025     0.010      4.929 f
+  data arrival time                                                                     4.929
+
+  clock clk (rise edge)                                                      5.000      5.000
+  clock network delay (ideal)                                                0.000      5.000
+  clock uncertainty                                                         -0.050      4.950
+  reg_op1_reg[21]/CLK (DFFX2_RVT)                                            0.000      4.950 r
+  library setup time                                                        -0.020      4.930
+  data required time                                                                    4.930
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    4.930
+  data arrival time                                                                    -4.929
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           0.001
+
+
+  Startpoint: reg_pc_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_out_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  reg_pc_reg[1]/CLK (DFFSSRX1_RVT)                  0.100     0.000 #    0.000 r
+  reg_pc_reg[1]/Q (DFFSSRX1_RVT)                    0.029     0.086      0.086 r
+  reg_pc[1] (net)                6        3.762               0.000      0.086 r
+  U8298/Y (AND2X1_RVT)                              0.025     0.678      0.765 r
+  n9073 (net)                    3        3.176               0.000      0.765 r
+  U8299/Y (AO222X1_RVT)                             0.040     0.275      1.040 r
+  n6154 (net)                    1        1.478               0.000      1.040 r
+  U8401/CO (FADDX1_RVT)                             0.036     0.079      1.119 r
+  n9051 (net)                    3        2.672               0.000      1.119 r
+  U6750/Y (AO222X1_RVT)                             0.046     0.248      1.367 r
+  n6443 (net)                    2        2.957               0.000      1.367 r
+  U6665/CO (FADDX1_RVT)                             0.038     0.177      1.545 r
+  n6203 (net)                    2        2.957               0.000      1.545 r
+  U4310/CO (FADDX1_RVT)                             0.037     0.176      1.720 r
+  n9027 (net)                    2        2.880               0.000      1.720 r
+  U4619/CO (FADDX1_RVT)                             0.034     0.169      1.889 r
+  n9002 (net)                    2        2.034               0.000      1.889 r
+  U11962/Y (AO21X1_LVT)                             0.029     0.125      2.014 r
+  n7581 (net)                    2        2.481               0.000      2.014 r
+  U11961/CO (FADDX1_LVT)                            0.032     0.143      2.158 r
+  n6512 (net)                    1        1.478               0.000      2.158 r
+  U4659/CO (FADDX1_RVT)                             0.034     0.075      2.232 r
+  n6264 (net)                    2        2.060               0.000      2.232 r
+  U4658/CO (FADDX1_RVT)                             0.034     0.134      2.366 r
+  n8975 (net)                    2        1.957               0.000      2.366 r
+  U11956/Y (AO21X1_LVT)                             0.030     0.123      2.489 r
+  n6219 (net)                    2        2.880               0.000      2.489 r
+  U4944/CO (FADDX1_RVT)                             0.034     0.167      2.657 r
+  n6257 (net)                    2        1.914               0.000      2.657 r
+  U4464/Y (AO21X1_RVT)                              0.029     0.124      2.781 r
+  n8943 (net)                    2        2.486               0.000      2.781 r
+  U4397/CO (FADDX1_RVT)                             0.031     0.149      2.930 r
+  n6194 (net)                    1        1.478               0.000      2.930 r
+  U4456/CO (FADDX1_RVT)                             0.032     0.073      3.003 r
+  n6211 (net)                    3        1.675               0.000      3.003 r
+  U11955/Y (AO21X1_LVT)                             0.030     0.156      3.158 r
+  n6497 (net)                    2        2.875               0.000      3.158 r
+  U11954/CO (FADDX1_LVT)                            0.037     0.164      3.322 r
+  n6232 (net)                    2        2.486               0.000      3.322 r
+  U4391/CO (FADDX1_RVT)                             0.031     0.150      3.472 r
+  n6282 (net)                    1        1.478               0.000      3.472 r
+  U4631/CO (FADDX1_RVT)                             0.034     0.075      3.547 r
+  n8898 (net)                    2        2.034               0.000      3.547 r
+  U11960/Y (AO21X1_LVT)                             0.027     0.124      3.670 r
+  n6365 (net)                    2        2.055               0.000      3.670 r
+  U11959/CO (FADDX1_LVT)                            0.032     0.125      3.796 r
+  n6379 (net)                    1        1.478               0.000      3.796 r
+  U4648/CO (FADDX1_RVT)                             0.036     0.077      3.872 r
+  n6387 (net)                    2        2.481               0.000      3.872 r
+  U11963/CO (FADDX1_LVT)                            0.032     0.144      4.017 r
+  n6504 (net)                    1        1.478               0.000      4.017 r
+  U4654/CO (FADDX1_RVT)                             0.034     0.075      4.091 r
+  n8861 (net)                    2        2.034               0.000      4.091 r
+  U11958/Y (AO21X1_LVT)                             0.029     0.125      4.216 r
+  n6520 (net)                    2        2.481               0.000      4.216 r
+  U11957/CO (FADDX1_LVT)                            0.033     0.143      4.360 r
+  n6549 (net)                    1        1.478               0.000      4.360 r
+  U4625/CO (FADDX1_RVT)                             0.037     0.079      4.438 r
+  n6603 (net)                    2        2.957               0.000      4.438 r
+  U4308/CO (FADDX1_RVT)                             0.036     0.174      4.612 r
+  n6649 (net)                    2        2.486               0.000      4.612 r
+  U4392/CO (FADDX1_RVT)                             0.030     0.149      4.761 r
+  n6650 (net)                    1        1.231               0.000      4.761 r
+  U4514/Y (XNOR2X1_RVT)                             0.026     0.073      4.834 r
+  n10888 (net)                   1        0.560               0.000      4.834 r
+  U4602/Y (AO21X1_RVT)                              0.022     0.047      4.881 r
+  N1908 (net)                    1        0.772               0.000      4.881 r
+  reg_out_reg[31]/RSTB (DFFSSRX1_RVT)               0.022     0.014      4.895 r
+  data arrival time                                                      4.895
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  reg_out_reg[31]/CLK (DFFSSRX1_RVT)                          0.000      4.950 r
+  library setup time                                         -0.054      4.896
+  data required time                                                     4.896
+  -------------------------------------------------------------------------------
+  data required time                                                     4.896
+  data arrival time                                                     -4.895
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.002
+
+
+  Startpoint: decoded_imm_j_reg[18]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_op1_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                      0.000      0.000
+  clock network delay (ideal)                                                0.000      0.000
+  decoded_imm_j_reg[18]/CLK (DFFX1_RVT)                            0.100     0.000 #    0.000 r
+  decoded_imm_j_reg[18]/QN (DFFX1_RVT)                             0.034     0.073      0.073 r
+  n9265 (net)                                   3        1.932               0.000      0.073 r
+  U11922/Y (NOR2X0_RVT)                                            0.016     0.171      0.243 f
+  n5322 (net)                                   2        1.157               0.000      0.243 f
+  U7571/Y (AND2X1_RVT)                                             0.021     0.079      0.322 f
+  n5346 (net)                                   4        2.190               0.000      0.322 f
+  U6723/Y (AND2X1_RVT)                                             0.025     0.251      0.573 f
+  n5603 (net)                                   5        2.863               0.000      0.573 f
+  U6653/Y (NBUFFX2_RVT)                                            0.020     0.410      0.982 f
+  n9109 (net)                                   7        3.886               0.000      0.982 f
+  U6606/Y (NBUFFX2_RVT)                                            0.026     0.871      1.853 f
+  n4728 (net)                                  11        6.201               0.000      1.853 f
+  U7988/Y (AO22X1_RVT)                                             0.020     2.823      4.676 f
+  n5904 (net)                                   1        0.580               0.000      4.676 f
+  U4968/Y (OR4X1_RVT)                                              0.012     0.065      4.741 f
+  n5911 (net)                                   1        0.621               0.000      4.741 f
+  U4351/Y (NOR4X1_RVT)                                             0.014     0.052      4.793 r
+  n5915 (net)                                   1        0.557               0.000      4.793 r
+  U5826/Y (OA21X1_RVT)                                             0.020     0.042      4.835 r
+  n5917 (net)                                   1        0.600               0.000      4.835 r
+  U5725/Y (NAND4X0_LVT)                                            0.041     0.032      4.868 f
+  n5920 (net)                                   1        0.524               0.000      4.868 f
+  U5604/Y (MUX21X1_RVT)                                            0.024     0.050      4.918 f
+  n2535 (net)                                   1        0.557               0.000      4.918 f
+  reg_op1_reg[5]/D (DFFX1_RVT)                                     0.024     0.010      4.928 f
+  data arrival time                                                                     4.928
+
+  clock clk (rise edge)                                                      5.000      5.000
+  clock network delay (ideal)                                                0.000      5.000
+  clock uncertainty                                                         -0.050      4.950
+  reg_op1_reg[5]/CLK (DFFX1_RVT)                                             0.000      4.950 r
+  library setup time                                                        -0.018      4.932
+  data required time                                                                    4.932
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    4.932
+  data arrival time                                                                    -4.928
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           0.004
+
+
+  Startpoint: decoded_imm_j_reg[19]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_op1_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                      0.000      0.000
+  clock network delay (ideal)                                                0.000      0.000
+  decoded_imm_j_reg[19]/CLK (DFFX1_RVT)                            0.100     0.000 #    0.000 r
+  decoded_imm_j_reg[19]/QN (DFFX1_RVT)                             0.033     0.072      0.072 r
+  n9268 (net)                                   3        1.871               0.000      0.072 r
+  U6823/Y (OR2X1_RVT)                                              0.019     0.158      0.230 r
+  n5314 (net)                                   2        1.323               0.000      0.230 r
+  U5111/Y (NOR2X0_RVT)                                             0.021     0.099      0.328 f
+  n5347 (net)                                   4        2.269               0.000      0.328 f
+  U6737/Y (AND2X1_RVT)                                             0.027     0.259      0.587 f
+  n5558 (net)                                   6        3.353               0.000      0.587 f
+  U7755/Y (NBUFFX2_RVT)                                            0.027     0.611      1.198 f
+  n9106 (net)                                  12        6.532               0.000      1.198 f
+  U7835/Y (AO22X1_RVT)                                             0.015     3.466      4.664 f
+  n5675 (net)                                   1        0.555               0.000      4.664 f
+  U4271/Y (OR4X1_RVT)                                              0.012     0.066      4.730 f
+  n5676 (net)                                   1        0.657               0.000      4.730 f
+  U5815/Y (NOR4X1_RVT)                                             0.014     0.048      4.778 r
+  n5680 (net)                                   1        0.707               0.000      4.778 r
+  U4519/Y (OR2X1_RVT)                                              0.017     0.036      4.813 r
+  n5683 (net)                                   1        0.593               0.000      4.813 r
+  U5684/Y (NAND4X0_RVT)                                            0.043     0.035      4.849 f
+  n5685 (net)                                   1        0.545               0.000      4.849 f
+  U4518/Y (AO21X1_RVT)                                             0.018     0.034      4.883 f
+  n4706 (net)                                   1        0.565               0.000      4.883 f
+  U5302/Y (AO21X1_RVT)                                             0.015     0.038      4.921 f
+  n2521 (net)                                   1        0.557               0.000      4.921 f
+  reg_op1_reg[19]/D (DFFX1_RVT)                                    0.015     0.010      4.931 f
+  data arrival time                                                                     4.931
+
+  clock clk (rise edge)                                                      5.000      5.000
+  clock network delay (ideal)                                                0.000      5.000
+  clock uncertainty                                                         -0.050      4.950
+  reg_op1_reg[19]/CLK (DFFX1_RVT)                                            0.000      4.950 r
+  library setup time                                                        -0.015      4.935
+  data required time                                                                    4.935
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    4.935
+  data arrival time                                                                    -4.931
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           0.004
+
+
+  Startpoint: cpu_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpuregs_reg[20][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  cpu_state_reg[2]/CLK (DFFX1_LVT)                  0.100     0.000 #    0.000 r
+  cpu_state_reg[2]/QN (DFFX1_LVT)                   0.029     0.057      0.057 f
+  n9412 (net)                    2        1.126               0.000      0.057 f
+  U6892/Y (AND4X1_LVT)                              0.026     0.086      0.143 f
+  n6046 (net)                    2        1.030               0.000      0.143 f
+  U4267/Y (NAND2X0_RVT)                             0.029     0.070      0.213 r
+  n5387 (net)                    2        1.236               0.000      0.213 r
+  U4390/Y (NOR3X0_RVT)                              0.017     0.099      0.312 f
+  n6963 (net)                    2        1.131               0.000      0.312 f
+  U4340/Y (AND2X1_RVT)                              0.016     0.074      0.386 f
+  n5396 (net)                    2        1.169               0.000      0.386 f
+  U5041/Y (INVX0_RVT)                               0.016     0.063      0.448 r
+  n5388 (net)                    2        1.284               0.000      0.448 r
+  U12002/Y (NOR2X0_LVT)                             0.017     0.086      0.534 f
+  n5977 (net)                    3        1.511               0.000      0.534 f
+  U6521/Y (NBUFFX2_RVT)                             0.015     0.126      0.660 f
+  n4652 (net)                    4        2.030               0.000      0.660 f
+  U4468/Y (NAND4X0_RVT)                             0.043     0.226      0.886 r
+  n7004 (net)                    3        1.826               0.000      0.886 r
+  U4724/Y (INVX0_RVT)                               0.040     0.151      1.037 f
+  n7511 (net)                    5        2.809               0.000      1.037 f
+  U6266/Y (NBUFFX2_RVT)                             0.029     0.411      1.448 f
+  n4735 (net)                   12        6.539               0.000      1.448 f
+  U9726/Y (AO22X1_RVT)                              0.024     3.470      4.918 f
+  n3407 (net)                    1        0.557               0.000      4.918 f
+  cpuregs_reg[20][8]/D (DFFX1_RVT)                  0.024     0.010      4.928 f
+  data arrival time                                                      4.928
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  cpuregs_reg[20][8]/CLK (DFFX1_RVT)                          0.000      4.950 r
+  library setup time                                         -0.018      4.932
+  data required time                                                     4.932
+  -------------------------------------------------------------------------------
+  data required time                                                     4.932
+  data arrival time                                                     -4.928
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.004
+
+
+  Startpoint: cpu_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpuregs_reg[20][10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  cpu_state_reg[2]/CLK (DFFX1_LVT)                  0.100     0.000 #    0.000 r
+  cpu_state_reg[2]/QN (DFFX1_LVT)                   0.029     0.057      0.057 f
+  n9412 (net)                    2        1.126               0.000      0.057 f
+  U6892/Y (AND4X1_LVT)                              0.026     0.086      0.143 f
+  n6046 (net)                    2        1.030               0.000      0.143 f
+  U4267/Y (NAND2X0_RVT)                             0.029     0.070      0.213 r
+  n5387 (net)                    2        1.236               0.000      0.213 r
+  U4390/Y (NOR3X0_RVT)                              0.017     0.099      0.312 f
+  n6963 (net)                    2        1.131               0.000      0.312 f
+  U4340/Y (AND2X1_RVT)                              0.016     0.074      0.386 f
+  n5396 (net)                    2        1.169               0.000      0.386 f
+  U5041/Y (INVX0_RVT)                               0.016     0.063      0.448 r
+  n5388 (net)                    2        1.284               0.000      0.448 r
+  U12002/Y (NOR2X0_LVT)                             0.017     0.086      0.534 f
+  n5977 (net)                    3        1.511               0.000      0.534 f
+  U6521/Y (NBUFFX2_RVT)                             0.015     0.126      0.660 f
+  n4652 (net)                    4        2.030               0.000      0.660 f
+  U4468/Y (NAND4X0_RVT)                             0.043     0.226      0.886 r
+  n7004 (net)                    3        1.826               0.000      0.886 r
+  U4724/Y (INVX0_RVT)                               0.040     0.151      1.037 f
+  n7511 (net)                    5        2.809               0.000      1.037 f
+  U6266/Y (NBUFFX2_RVT)                             0.029     0.411      1.448 f
+  n4735 (net)                   12        6.539               0.000      1.448 f
+  U9728/Y (AO22X1_RVT)                              0.024     3.470      4.918 f
+  n3345 (net)                    1        0.557               0.000      4.918 f
+  cpuregs_reg[20][10]/D (DFFX1_RVT)                 0.024     0.010      4.928 f
+  data arrival time                                                      4.928
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  cpuregs_reg[20][10]/CLK (DFFX1_RVT)                         0.000      4.950 r
+  library setup time                                         -0.018      4.932
+  data required time                                                     4.932
+  -------------------------------------------------------------------------------
+  data required time                                                     4.932
+  data arrival time                                                     -4.928
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.004
+
+
+  Startpoint: cpu_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpuregs_reg[20][14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  cpu_state_reg[2]/CLK (DFFX1_LVT)                  0.100     0.000 #    0.000 r
+  cpu_state_reg[2]/QN (DFFX1_LVT)                   0.029     0.057      0.057 f
+  n9412 (net)                    2        1.126               0.000      0.057 f
+  U6892/Y (AND4X1_LVT)                              0.026     0.086      0.143 f
+  n6046 (net)                    2        1.030               0.000      0.143 f
+  U4267/Y (NAND2X0_RVT)                             0.029     0.070      0.213 r
+  n5387 (net)                    2        1.236               0.000      0.213 r
+  U4390/Y (NOR3X0_RVT)                              0.017     0.099      0.312 f
+  n6963 (net)                    2        1.131               0.000      0.312 f
+  U4340/Y (AND2X1_RVT)                              0.016     0.074      0.386 f
+  n5396 (net)                    2        1.169               0.000      0.386 f
+  U5041/Y (INVX0_RVT)                               0.016     0.063      0.448 r
+  n5388 (net)                    2        1.284               0.000      0.448 r
+  U12002/Y (NOR2X0_LVT)                             0.017     0.086      0.534 f
+  n5977 (net)                    3        1.511               0.000      0.534 f
+  U6521/Y (NBUFFX2_RVT)                             0.015     0.126      0.660 f
+  n4652 (net)                    4        2.030               0.000      0.660 f
+  U4468/Y (NAND4X0_RVT)                             0.043     0.226      0.886 r
+  n7004 (net)                    3        1.826               0.000      0.886 r
+  U4724/Y (INVX0_RVT)                               0.040     0.151      1.037 f
+  n7511 (net)                    5        2.809               0.000      1.037 f
+  U6266/Y (NBUFFX2_RVT)                             0.029     0.411      1.448 f
+  n4735 (net)                   12        6.539               0.000      1.448 f
+  U9293/Y (AO22X1_RVT)                              0.024     3.470      4.918 f
+  n3221 (net)                    1        0.557               0.000      4.918 f
+  cpuregs_reg[20][14]/D (DFFX1_RVT)                 0.024     0.010      4.928 f
+  data arrival time                                                      4.928
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  cpuregs_reg[20][14]/CLK (DFFX1_RVT)                         0.000      4.950 r
+  library setup time                                         -0.018      4.932
+  data required time                                                     4.932
+  -------------------------------------------------------------------------------
+  data required time                                                     4.932
+  data arrival time                                                     -4.928
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.004
+
+
+  Startpoint: cpu_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpuregs_reg[20][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  cpu_state_reg[2]/CLK (DFFX1_LVT)                  0.100     0.000 #    0.000 r
+  cpu_state_reg[2]/QN (DFFX1_LVT)                   0.029     0.057      0.057 f
+  n9412 (net)                    2        1.126               0.000      0.057 f
+  U6892/Y (AND4X1_LVT)                              0.026     0.086      0.143 f
+  n6046 (net)                    2        1.030               0.000      0.143 f
+  U4267/Y (NAND2X0_RVT)                             0.029     0.070      0.213 r
+  n5387 (net)                    2        1.236               0.000      0.213 r
+  U4390/Y (NOR3X0_RVT)                              0.017     0.099      0.312 f
+  n6963 (net)                    2        1.131               0.000      0.312 f
+  U4340/Y (AND2X1_RVT)                              0.016     0.074      0.386 f
+  n5396 (net)                    2        1.169               0.000      0.386 f
+  U5041/Y (INVX0_RVT)                               0.016     0.063      0.448 r
+  n5388 (net)                    2        1.284               0.000      0.448 r
+  U12002/Y (NOR2X0_LVT)                             0.017     0.086      0.534 f
+  n5977 (net)                    3        1.511               0.000      0.534 f
+  U6521/Y (NBUFFX2_RVT)                             0.015     0.126      0.660 f
+  n4652 (net)                    4        2.030               0.000      0.660 f
+  U4468/Y (NAND4X0_RVT)                             0.043     0.226      0.886 r
+  n7004 (net)                    3        1.826               0.000      0.886 r
+  U4724/Y (INVX0_RVT)                               0.040     0.151      1.037 f
+  n7511 (net)                    5        2.809               0.000      1.037 f
+  U6266/Y (NBUFFX2_RVT)                             0.029     0.411      1.448 f
+  n4735 (net)                   12        6.539               0.000      1.448 f
+  U9721/Y (AO22X1_RVT)                              0.024     3.470      4.918 f
+  n3500 (net)                    1        0.557               0.000      4.918 f
+  cpuregs_reg[20][5]/D (DFFX1_RVT)                  0.024     0.010      4.928 f
+  data arrival time                                                      4.928
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  cpuregs_reg[20][5]/CLK (DFFX1_RVT)                          0.000      4.950 r
+  library setup time                                         -0.018      4.932
+  data required time                                                     4.932
+  -------------------------------------------------------------------------------
+  data required time                                                     4.932
+  data arrival time                                                     -4.928
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.004
+
+
+  Startpoint: cpu_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpuregs_reg[20][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  cpu_state_reg[2]/CLK (DFFX1_LVT)                  0.100     0.000 #    0.000 r
+  cpu_state_reg[2]/QN (DFFX1_LVT)                   0.029     0.057      0.057 f
+  n9412 (net)                    2        1.126               0.000      0.057 f
+  U6892/Y (AND4X1_LVT)                              0.026     0.086      0.143 f
+  n6046 (net)                    2        1.030               0.000      0.143 f
+  U4267/Y (NAND2X0_RVT)                             0.029     0.070      0.213 r
+  n5387 (net)                    2        1.236               0.000      0.213 r
+  U4390/Y (NOR3X0_RVT)                              0.017     0.099      0.312 f
+  n6963 (net)                    2        1.131               0.000      0.312 f
+  U4340/Y (AND2X1_RVT)                              0.016     0.074      0.386 f
+  n5396 (net)                    2        1.169               0.000      0.386 f
+  U5041/Y (INVX0_RVT)                               0.016     0.063      0.448 r
+  n5388 (net)                    2        1.284               0.000      0.448 r
+  U12002/Y (NOR2X0_LVT)                             0.017     0.086      0.534 f
+  n5977 (net)                    3        1.511               0.000      0.534 f
+  U6521/Y (NBUFFX2_RVT)                             0.015     0.126      0.660 f
+  n4652 (net)                    4        2.030               0.000      0.660 f
+  U4468/Y (NAND4X0_RVT)                             0.043     0.226      0.886 r
+  n7004 (net)                    3        1.826               0.000      0.886 r
+  U4724/Y (INVX0_RVT)                               0.040     0.151      1.037 f
+  n7511 (net)                    5        2.809               0.000      1.037 f
+  U6266/Y (NBUFFX2_RVT)                             0.029     0.411      1.448 f
+  n4735 (net)                   12        6.539               0.000      1.448 f
+  U9725/Y (AO22X1_RVT)                              0.024     3.470      4.918 f
+  n3562 (net)                    1        0.557               0.000      4.918 f
+  cpuregs_reg[20][3]/D (DFFX1_RVT)                  0.024     0.010      4.928 f
+  data arrival time                                                      4.928
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  cpuregs_reg[20][3]/CLK (DFFX1_RVT)                          0.000      4.950 r
+  library setup time                                         -0.018      4.932
+  data required time                                                     4.932
+  -------------------------------------------------------------------------------
+  data required time                                                     4.932
+  data arrival time                                                     -4.928
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.004
+
+
+  Startpoint: cpu_state_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cpuregs_reg[20][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  picorv32           35000                 saed32hvt_ff0p95v125c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock clk (rise edge)                                       0.000      0.000
+  clock network delay (ideal)                                 0.000      0.000
+  cpu_state_reg[2]/CLK (DFFX1_LVT)                  0.100     0.000 #    0.000 r
+  cpu_state_reg[2]/QN (DFFX1_LVT)                   0.029     0.057      0.057 f
+  n9412 (net)                    2        1.126               0.000      0.057 f
+  U6892/Y (AND4X1_LVT)                              0.026     0.086      0.143 f
+  n6046 (net)                    2        1.030               0.000      0.143 f
+  U4267/Y (NAND2X0_RVT)                             0.029     0.070      0.213 r
+  n5387 (net)                    2        1.236               0.000      0.213 r
+  U4390/Y (NOR3X0_RVT)                              0.017     0.099      0.312 f
+  n6963 (net)                    2        1.131               0.000      0.312 f
+  U4340/Y (AND2X1_RVT)                              0.016     0.074      0.386 f
+  n5396 (net)                    2        1.169               0.000      0.386 f
+  U5041/Y (INVX0_RVT)                               0.016     0.063      0.448 r
+  n5388 (net)                    2        1.284               0.000      0.448 r
+  U12002/Y (NOR2X0_LVT)                             0.017     0.086      0.534 f
+  n5977 (net)                    3        1.511               0.000      0.534 f
+  U6521/Y (NBUFFX2_RVT)                             0.015     0.126      0.660 f
+  n4652 (net)                    4        2.030               0.000      0.660 f
+  U4468/Y (NAND4X0_RVT)                             0.043     0.226      0.886 r
+  n7004 (net)                    3        1.826               0.000      0.886 r
+  U4724/Y (INVX0_RVT)                               0.040     0.151      1.037 f
+  n7511 (net)                    5        2.809               0.000      1.037 f
+  U6266/Y (NBUFFX2_RVT)                             0.029     0.411      1.448 f
+  n4735 (net)                   12        6.539               0.000      1.448 f
+  U9292/Y (AO22X1_RVT)                              0.024     3.470      4.918 f
+  n3624 (net)                    1        0.557               0.000      4.918 f
+  cpuregs_reg[20][1]/D (DFFX1_RVT)                  0.024     0.010      4.928 f
+  data arrival time                                                      4.928
+
+  clock clk (rise edge)                                       5.000      5.000
+  clock network delay (ideal)                                 0.000      5.000
+  clock uncertainty                                          -0.050      4.950
+  cpuregs_reg[20][1]/CLK (DFFX1_RVT)                          0.000      4.950 r
+  library setup time                                         -0.018      4.932
+  data required time                                                     4.932
+  -------------------------------------------------------------------------------
+  data required time                                                     4.932
+  data arrival time                                                     -4.928
+  -------------------------------------------------------------------------------
+  slack (MET)                                                            0.004
+
+
+1
