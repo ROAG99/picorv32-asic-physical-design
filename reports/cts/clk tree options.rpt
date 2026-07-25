@@ -1,0 +1,35 @@
+****************************************
+ Report : target skew and latency
+ Design : picorv32
+ Date   : Thu Apr 16 15:37:57 2026
+****************************************
+
+##Target Skew
+
+Clock                        Corner                        Target
+-----------------------------------------------------------------
+clk (mode func)              fast                          0.75
+clk (mode func)              slow                          0.75
+
+##Target Latency
+
+Clock                        Corner                        Target
+-----------------------------------------------------------------
+clk (mode func)              slow                          0.25
+
+##Max Level Count
+
+Clock                                  Count
+-----------------------------------------------------------------
+No max level constraints found.
+
+##Root NDR Fanout Limit
+
+Clock                                  Fanout limit
+-----------------------------------------------------------------
+No Root NDR fanout limit constraints applied.
+
+##Trunk nets specific drivers
+
+---------------------------------------------------------------------------
+1
