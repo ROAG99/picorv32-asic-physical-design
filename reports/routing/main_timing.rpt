@@ -1,0 +1,95 @@
+[icc2-lic Thu Apr 16 15:42:20 2026] Command 'report_timing' requires licenses
+[icc2-lic Thu Apr 16 15:42:20 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Apr 16 15:42:20 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu Apr 16 15:42:20 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu Apr 16 15:42:20 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Apr 16 15:42:20 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Apr 16 15:42:20 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu Apr 16 15:42:20 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu Apr 16 15:42:20 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu Apr 16 15:42:20 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Apr 16 15:42:20 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Apr 16 15:42:20 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : picorv32
+Version: U-2022.12-SP3
+Date   : Thu Apr 16 15:42:20 2026
+****************************************
+
+  Startpoint: reg_pc_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: reg_out_reg_31_ (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: slow
+  Scenario: func_slow
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  reg_pc_reg_1_/CLK (DFFSSRX1_RVT)                 0.00      0.00 r
+  reg_pc_reg_1_/Q (DFFSSRX1_RVT)                   0.34      0.34 r
+  placeHFSBUF_173_324/Y (NBUFFX2_LVT)              0.10      0.44 r
+  U8298/Y (AND2X1_LVT)                             0.09      0.53 r
+  U8299/Y (AO222X1_LVT)                            0.14      0.67 r
+  U8401/CO (FADDX1_LVT)                            0.13      0.80 r
+  U6750/Y (AO222X1_LVT)                            0.16      0.96 r
+  U6665/CO (FADDX1_LVT)                            0.14      1.10 r
+  U4310/CO (FADDX1_LVT)                            0.14      1.24 r
+  U4619/CO (FADDX1_LVT)                            0.13      1.37 r
+  placectmTdsLR_1_1920/Y (AO221X1_LVT)             0.14      1.51 r
+  U11961/CO (FADDX1_LVT)                           0.12      1.63 r
+  U4659/CO (FADDX1_LVT)                            0.13      1.76 r
+  U4658/CO (FADDX1_LVT)                            0.13      1.89 r
+  placectmTdsLR_1_2527/Y (AO221X1_LVT)             0.15      2.04 r
+  U4944/CO (FADDX1_LVT)                            0.13      2.17 r
+  placectmTdsLR_1_1151/Y (AO221X1_LVT)             0.14      2.31 r
+  U4397/CO (FADDX1_LVT)                            0.11      2.43 r
+  U4456/CO (FADDX1_LVT)                            0.12      2.55 r
+  placectmTdsLR_1_1558/Y (AO221X1_LVT)             0.14      2.69 r
+  U11954/CO (FADDX1_LVT)                           0.13      2.82 r
+  U4391/CO (FADDX1_LVT)                            0.11      2.93 r
+  U4631/CO (FADDX1_LVT)                            0.12      3.05 r
+  placectmTdsLR_1_1077/Y (AO221X1_LVT)             0.14      3.20 r
+  U11959/CO (FADDX1_LVT)                           0.11      3.31 r
+  U4648/CO (FADDX1_LVT)                            0.13      3.44 r
+  U11963/CO (FADDX1_LVT)                           0.11      3.55 r
+  U4654/CO (FADDX1_LVT)                            0.13      3.68 r
+  placectmTdsLR_1_1698/Y (AO221X1_LVT)             0.14      3.82 r
+  U11957/CO (FADDX1_LVT)                           0.11      3.94 r
+  U4625/CO (FADDX1_LVT)                            0.13      4.07 r
+  U4308/CO (FADDX1_LVT)                            0.13      4.20 r
+  U4392/CO (FADDX1_LVT)                            0.11      4.31 r
+  U4514/Y (XNOR2X1_LVT)                            0.16      4.47 r
+  U4602/Y (AO21X1_LVT)                             0.10      4.57 r
+  reg_out_reg_31_/RSTB (DFFSSRX1_RVT)              0.00      4.57 r
+  data arrival time                                          4.57
+
+  clock clk (rise edge)                            5.00      5.00
+  clock network delay (ideal)                      0.00      5.00
+  reg_out_reg_31_/CLK (DFFSSRX1_RVT)               0.00      5.00 r
+  clock uncertainty                               -0.05      4.95
+  library setup time                              -0.22      4.73
+  data required time                                         4.73
+  ------------------------------------------------------------------------
+  data required time                                         4.73
+  data arrival time                                         -4.57
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.16
+
+
+1
